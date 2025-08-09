@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GHBL TRUNG ÁI - Trang chủ</title>
+    <meta name="description" content="Chào mừng đến với trang web chính thức của Giáo họ biệt lập Trung Ái. Tìm hiểu về lịch sử, vị trí và các hoạt động của chúng tôi.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap');
+        body { font-family: 'Inter', sans-serif; color: #1a1a1a; background-color: #f7fafc; }
+        .main-title { font-family: 'Playfair Display', serif; text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); }
+        @media (min-width: 768px) { .main-title { font-size: 2rem; } }
+        .nav-image { transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer; }
+        .nav-image:hover { transform: translateY(-5px) scale(1.02); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); }
+    </style>
+</head>
+<body class="bg-[#f7fafc] text-gray-900 min-h-screen flex flex-col">
+    <nav class="fixed top-0 left-0 right-0 bg-gray-100 bg-opacity-70 shadow-lg z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <a href="index.html">
+                <h1 class="main-title text-blue-800 text-center">GHBL TRUNG ÁI</h1>
+            </a>
+            <div class="flex items-center space-x-4 md:space-x-8 lg:space-x-12">
+                <a href="gioi-thieu.html" class="text-gray-700 hover:text-blue-600 font-semibold transition-colors nav-link">Giới thiệu</a>
+                <a href="lich-su.html" class="text-gray-700 hover:text-blue-600 font-semibold transition-colors nav-link">Lịch sử</a>
+                <a href="vi-tri.html" class="text-gray-700 hover:text-blue-600 font-semibold transition-colors nav-link">Vị trí</a>
+                <a href="lien-he.html" class="text-gray-700 hover:text-blue-600 font-semibold transition-colors nav-link">Liên hệ</a>
+            </div>
+        </div>
+    </nav>
+    <main class="flex-grow flex items-center justify-center pt-24 pb-8" style="background-image: url('https://scontent.fdad1-3.fna.fbcdn.net/v/t39.30808-6/530366935_122214152006246985_649852059934424281_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=5lPCCGMIxdkQ7kNvwHZRPae&_nc_oc=AdmMl5hdZ78f_q4xY7knjEszOWdGjUOWmDWoBfa3-bxrl30_c_G7T4IWhq_B37NY824&_nc_zt=23&_nc_ht=scontent.fdad1-3.fna&_nc_gid=vZX-xm5TSCXWC1_zz3aUHg&oh=00_AfXc736B2YA3Bph_8aoT4QRytPoR2E5vPhd4v5Vds3Ca3g&oe=689CB62F'); background-size: cover; background-position: center;">
+        <div class="max-w-6xl mx-auto text-center p-4">
+            <h2 class="main-title mb-4 text-blue-800 text-4xl md:text-5xl lg:text-6xl text-shadow-lg">Chào mừng đến với GHBL TRUNG ÁI</h2>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-6 mt-12">
+                <a href="gioi-thieu.html" class="block w-full md:w-1/3">
+                    <img src="https://gpquinhon.org/imagup/2019/2019-06-01-Trung-Ai_05.jpg" alt="Giới thiệu" class="w-full h-80 object-cover rounded-xl shadow-lg nav-image">
+                </a>
+                <a href="lich-su.html" class="block w-full md:w-1/3">
+                    <img src="https://gpquinhon.org/imagup/2019/2019-06-01-Trung-Ai_02.jpg" alt="Đi đến trang Lịch sử" class="w-full h-80 object-cover rounded-xl shadow-lg nav-image">
+                </a>
+                <a href="vi-tri.html" class="block w-full md:w-1/3">
+                    <img src="https://gpquinhon.org/imagup/2019/2019-06-01-Trung-Ai_01.jpg" alt="Đi đến trang Vị trí" class="w-full h-80 object-cover rounded-xl shadow-lg nav-image">
+                </a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
